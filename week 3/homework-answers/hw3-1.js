@@ -4,7 +4,6 @@ var url = 'mongodb://localhost:27017/school';
 
 mongoClient.connect(url, function(err, db){
 	var coll = db.collection('students');
-
 	var cursor = coll.find({});
 	cursor.each(function(err, doc){
 		var lowest = Math.min.call(null, doc.scores[2].score, doc.scores[3].score);
