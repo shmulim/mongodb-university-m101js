@@ -3,4 +3,4 @@ db.products.aggregate([
         "_id": "$category",
         "num_products": {$sum: 1}
     }}
-])
+]);
