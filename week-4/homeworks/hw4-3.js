@@ -12,9 +12,7 @@
         if (err) throw err;
     });
     
-    
     // from mongo shell
     db.posts.createIndex({'date': 1});
     db.posts.createIndex({'permalink': 1});
     db.posts.createIndex({'tags': 1});
-    
