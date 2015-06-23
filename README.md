@@ -1,2 +1,2 @@
 # m101js
-MongoDB for Node.js Developers - course material and homework answers
+MongoDB for Node.js Developers - course material, notes, quizzes and homework answers
