@@ -1,4 +1,4 @@
-    var posts = db.collection("posts");
+    var posts = db.collection('posts');
     
     posts.createIndex({'date': 1}, function(err){
         if (err) throw err;
