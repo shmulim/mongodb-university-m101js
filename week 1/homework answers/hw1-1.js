@@ -7,9 +7,8 @@ Change directory into hw1
 
 Use mongorestore to restore the dump into your running mongod. Do this by opening a terminal
 window (mac) or cmd window (windows) and navigating to the directory so that the dump directory
-is directly beneath you. Now type:
+is directly beneath you. Now type: mongorestore dump
 
-mongorestore dump
 Note you will need to have your path setup correctly to find mongorestore.
 
 Now, using the Mongo shell, perform a findOne on the collection called hw1_1 in the database m101.
