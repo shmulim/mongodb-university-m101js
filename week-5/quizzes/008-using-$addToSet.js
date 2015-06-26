@@ -26,6 +26,8 @@ two different states and is in fact two different cities in that case - for eg
 Springfield, MO and Springfield, MA)
 */
 
+/*
 db.zips.aggregate([
     {$group: {"_id": "$city",  "postal_codes": {$addToSet: "$_id" }}}  
 ]);
+*/
