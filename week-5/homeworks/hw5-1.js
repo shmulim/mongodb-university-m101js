@@ -24,7 +24,8 @@ aggregation pipeline is {$limit: 1} (or some single digit number)
 db.posts.aggregate([
   {$unwind: "$comments"},
   {$group: {_id: "$comments.author", count: {$sum: 1}}},
-  {$sort: {count:-1}}
+  {$sort: {count:-1}},
+  {$limit: 6}
 ])
 */
 
