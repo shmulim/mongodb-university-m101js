@@ -63,8 +63,8 @@ db.grades.aggregate([
   { $match: { "scores.type": { $in: ["exam", "homework"] } } }, 
   { $group: { _id: "$class_id", average: { $avg: "$scores.score" } } },
   { $sort: { average: -1 } },
-  { $limit: 7 }
-])
-*/
+  { $project: { _id: 0, class_id: "$_id", highest_average: "$average" } }, 
+  { $limit: 1 }
+])*/
 
 // 1
