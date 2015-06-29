@@ -65,6 +65,7 @@ db.grades.aggregate([
   { $sort: { average: -1 } },
   { $project: { _id: 0, class_id: "$_id", highest_average: "$average" } }, 
   { $limit: 1 }
-])*/
+])
+*/
 
 // 1
